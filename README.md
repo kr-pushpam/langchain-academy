@@ -103,3 +103,9 @@ for i in {1..5}; do
 done
 echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 ```
+or simply copy the .env file from outside into studio dir for all modules
+```
+for i in {1..5}; do         
+  cp .env "module-$i/studio/.env"
+done
+```
